@@ -119,7 +119,7 @@ function Project() {
     </p>
 
     <a
-      href="https://shahzaibidrees.netlify.app"
+      href="https://shahzaibi-idrees.netlify.app/"
       target="_blank"
       rel="noreferrer"
     >
