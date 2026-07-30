@@ -82,9 +82,9 @@ function Project() {
           </div>
 
           <div className="project-card">
-            <h4>ADU Interior Design</h4>
+            <h4>Quillsnappress</h4>
             <a
-              href="https://interiordesign.xemensolutions.tech/adu/"
+              href="https://quillsnappress.com/"
               target="_blank"
             >
               Visit Website →

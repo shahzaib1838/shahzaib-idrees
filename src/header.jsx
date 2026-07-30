@@ -1,11 +1,18 @@
 import "./App.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header">
 
       <div className="logo">
-        <h2>DevLogo</h2>
+        <Link to="/">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/9501/5247/files/sz_sky-removebg-preview.png?v=1785085275"
+            alt="SZ Sky Logo"
+            className="logo-img"
+          />
+        </Link>
       </div>
 
       <nav>
@@ -13,20 +20,23 @@ function Header() {
         <ul>
 
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
 
+      
+              <li>
+            <Link to="/blog">Blog</Link>
+          </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link to="/guest-posting">Guest Posting</Link>
           </li>
-
         </ul>
 
       </nav>
 
-      <a href="/contact" className="contact-btn">
+      <Link to="/contact" className="contact-btn">
         Contact Me
-      </a>
+      </Link>
 
     </header>
   );

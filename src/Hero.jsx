@@ -2,6 +2,16 @@ import { Link } from "react-router-dom";
 import "./App.css";
 
 function Hero() {
+  const handleScrollToProjects = () => {
+  const section = document.getElementById("projects");
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
   return (
     <section className="hero">
 
@@ -34,9 +44,12 @@ function Hero() {
          <Link to="/contact" className="primary-btn">
   Contact Me
 </Link>
-         <a href="#projects" className="secondary-btn">
-    View Projects
-</a>
+         <button
+  className="secondary-btn"
+  onClick={handleScrollToProjects}
+>
+  View Projects
+</button>
         </div>
 
       </div>
