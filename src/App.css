@@ -208,8 +208,7 @@ padding:11px 22px;
 @media(max-width:768px){
 
 .header{
-
-flex-direction:column;
+display: flex;
 
 gap:20px;
 
@@ -217,7 +216,7 @@ gap:20px;
 
 nav ul{
 
-gap:20px;
+display:none;
 
 }
 
@@ -239,11 +238,14 @@ align-items:center;
 }
 
 .contact-btn{
+padding: 5px 12px;
+font-size: 14px;
 
-width:100%;
 
 }
-
+.hero-content{
+    text-align: center;
+}
 }
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
@@ -489,7 +491,7 @@ height:300px;
 
 .hero{
 
-padding:50px 20px;
+padding:100px 20px;
 
 }
 
@@ -516,7 +518,11 @@ font-size:22px;
 font-size:15px;
 
 }
-
+.logo img {
+  width: 80px;   /* ya jitna size chahiye */
+  height: auto;
+  
+}
 .primary-btn,
 .secondary-btn{
 
@@ -624,7 +630,12 @@ textarea{
 .contact-form{
     padding:25px;
 }
+.projects{
 
+    padding:100px 8% 0px 8%;
+    
+
+}
 }
 /* =======================
         PROJECTS
@@ -1363,7 +1374,7 @@ textarea{
 @media (max-width:992px){
 
 .footer{
-padding:80px 6%;
+padding:60px 6%;
 }
 
 .footer-grid{
@@ -1392,7 +1403,7 @@ grid-template-columns:repeat(2,1fr);
 @media (max-width:768px){
 
 .footer{
-padding:70px 20px;
+padding:0px 20px 40px 20px;
 }
 
 .footer-heading h2{
@@ -1472,6 +1483,11 @@ font-size:20px;
 font-size:13px;
 }
 
+
+.project-category h3{
+line-height: 40px;
+
+}
 }
 /* ===========================
    GUEST POSTING HERO

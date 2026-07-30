@@ -4,16 +4,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "build:github": "cross-env VITE_BASE_PATH=/my-react-app/ vite build",
-    "build:netlify": "cross-env VITE_BASE_PATH=/ vite build"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "oxlint",
+  "preview": "vite preview"
+},
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "react": "^19.2.7",

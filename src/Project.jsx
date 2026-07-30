@@ -104,6 +104,31 @@ function Project() {
         </div>
 
       </div>
+      {/* React */}
+
+<div className="project-category">
+
+  <h3>⚛️ React Development</h3>
+
+  <div className="project-card">
+
+    <h4>Personal Portfolio</h4>
+
+    <p>
+      Modern, responsive portfolio website built with React, Vite, React Router, EmailJS, and custom CSS.
+    </p>
+
+    <a
+      href="https://shahzaibidrees.netlify.app"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Visit Website →
+    </a>
+
+  </div>
+
+</div>
 
       {/* SEO */}
 
@@ -130,6 +155,7 @@ function Project() {
 
       </div>
 
+    
     </section>
   );
 }
