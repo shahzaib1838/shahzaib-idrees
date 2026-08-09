@@ -53,7 +53,7 @@ body{
 }
 
 .logo img {
-  width: 120px;   /* ya jitna size chahiye */
+  width: 130px;   /* ya jitna size chahiye */
   height: auto;
   display: block;
   object-fit: contain;
@@ -632,10 +632,432 @@ textarea{
 }
 .projects{
 
-    padding:100px 8% 0px 8%;
+   padding: 50px 80px 50px 80px;
     
 
 }
+}
+/* ================================
+   EXPERIENCE SECTION
+================================ */
+
+.experience-section {
+  width: 100%;
+  padding: 0px 20px;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.experience-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.experience-heading {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 70px;
+}
+
+.experience-badge {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.experience-heading h2 {
+  margin: 0 0 18px;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.experience-heading h2 span {
+  background: linear-gradient(90deg, #38bdf8, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-heading p {
+  margin: 0 auto;
+  max-width: 650px;
+  color: #cbd5e1;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* ================================
+   TIMELINE
+================================ */
+
+.experience-timeline {
+  position: relative;
+  padding-left: 70px;
+}
+
+/* Vertical Line */
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    #38bdf8,
+    #2563eb,
+    rgba(37, 99, 235, 0.1)
+  );
+}
+
+
+/* Experience Item */
+
+.experience-item {
+  position: relative;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 45px;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Timeline Dot */
+
+.experience-dot {
+  position: absolute;
+  left: -55px;
+  top: 30px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #38bdf8;
+  border: 3px solid #0f172a;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+  z-index: 2;
+}
+
+
+/* Company Logo */
+
+.experience-logo {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #38bdf8
+  );
+
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Experience Content */
+
+.experience-content {
+  flex: 1;
+  padding: 25px 28px;
+
+  background: rgba(30, 41, 59, 0.65);
+
+  border: 1px solid rgba(148, 163, 184, 0.15);
+
+  border-radius: 18px;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s ease;
+}
+
+.experience-content:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(56, 189, 248, 0.45);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25),
+    0 0 25px rgba(56, 189, 248, 0.08);
+}
+
+
+/* Company */
+
+.experience-content h3 {
+  margin: 0 0 6px;
+
+  font-size: 21px;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+
+/* Role */
+
+.experience-role {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #38bdf8;
+}
+
+.experience-type {
+  margin-left: 5px;
+
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+
+/* Duration */
+
+.experience-duration {
+  display: block;
+
+  margin-top: 7px;
+
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+
+/* Location */
+
+.experience-location {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+
+/* Description */
+
+.experience-description {
+  margin-top: 18px;
+}
+
+.experience-description p,
+.experience-role-item p {
+  margin: 0;
+
+  color: #cbd5e1;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* Multiple Roles */
+
+.experience-roles {
+  margin-top: 25px;
+}
+
+.experience-role-item {
+  position: relative;
+
+  padding: 22px 0;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.experience-role-item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.experience-role-item:last-child {
+  padding-bottom: 0;
+}
+
+.experience-role-item h4 {
+  margin: 0 0 6px;
+
+  font-size: 17px;
+
+  color: #ffffff;
+}
+
+.experience-role-meta {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 14px;
+
+  color: #94a3b8;
+}
+
+
+/* Skills */
+
+.experience-skills {
+  display: flex;
+
+  flex-wrap: wrap;
+   justify-content: center;
+  gap: 8px;
+
+  margin-top: 18px;
+}
+
+.experience-skills span {
+  display: inline-block;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  background: rgba(37, 99, 235, 0.12);
+
+  border: 1px solid rgba(56, 189, 248, 0.2);
+
+  color: #7dd3fc;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  .experience-section {
+    padding: 75px 18px;
+  }
+
+  .experience-heading {
+    margin-bottom: 50px;
+  }
+
+  .experience-heading h2 {
+    font-size: 36px;
+  }
+
+  .experience-heading p {
+    font-size: 15px;
+  }
+
+  .experience-timeline {
+    padding-left: 42px;
+  }
+
+  .experience-timeline::before {
+    left: 12px;
+  }
+
+  .experience-dot {
+    left: -37px;
+    top: 24px;
+  }
+
+  .experience-item {
+    gap: 15px;
+  }
+
+  .experience-logo {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 12px;
+
+    font-size: 13px;
+  }
+
+  .experience-content {
+    padding: 20px;
+  }
+
+  .experience-content h3 {
+    font-size: 18px;
+  }
+
+  .experience-role {
+    font-size: 14px;
+  }
+
+  .experience-description p,
+  .experience-role-item p {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 520px) {
+
+  .experience-heading h2 {
+    font-size: 30px;
+  }
+
+  .experience-timeline {
+    padding-left: 30px;
+  }
+
+  .experience-timeline::before {
+    left: 8px;
+  }
+
+  .experience-dot {
+    left: -27px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .experience-item {
+    display: block;
+  }
+
+  .experience-logo {
+    margin-bottom: 12px;
+  }
+
+  .experience-content {
+    padding: 18px;
+  }
+
+  .experience-skills {
+    gap: 6px;
+  }
+
+  .experience-skills span {
+    font-size: 11px;
+  }
 }
 /* =======================
         PROJECTS
@@ -643,7 +1065,7 @@ textarea{
 
 .projects{
 
-    padding:100px 8%;
+    padding: 50px 80px 50px 80px;
     background:#111827;
     color:white;
     scroll-margin-top: 100px;
@@ -1151,7 +1573,7 @@ textarea{
 .footer {
   background: #0f172a;
   color: #fff;
-  padding: 90px 8% 30px;
+  padding: 50px 8% 30px;
 }
 
 /* ==========================

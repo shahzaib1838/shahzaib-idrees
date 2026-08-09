@@ -100,12 +100,12 @@ const handleSubmit = async (e) => {
 
             <div className="gp-buttons">
 
-              <a href="#contact" className="primary-btn">
+              <a href="#guest-posting" className="primary-btn">
                 Get Started
                 <FaArrowRight />
               </a>
 
-              <a href="#benefits" className="secondary-btn">
+              <a href="#contact" className="secondary-btn">
                 Learn More
               </a>
 
@@ -287,7 +287,7 @@ const handleSubmit = async (e) => {
 </section>
 {/* ================= GUEST POST REQUEST ================= */}
 
-<section className="guest-request" id="contact">
+<section className="guest-request" id="guest-posting">
 
     <div className="request-header">
 

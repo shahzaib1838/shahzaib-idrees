@@ -1,5 +1,6 @@
 import "./App.css";
 import { Link } from "react-router-dom";
+import logo from "./assets/logo.png";
 
 function Header() {
   return (
@@ -8,7 +9,7 @@ function Header() {
       <div className="logo">
         <Link to="/">
           <img
-            src="https://cdn.shopify.com/s/files/1/0655/9501/5247/files/sz_sky-removebg-preview.png?v=1785085275"
+            src={logo}
             alt="SZ Sky Logo"
             className="logo-img"
           />
