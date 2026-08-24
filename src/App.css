@@ -519,7 +519,7 @@ font-size:15px;
 
 }
 .logo img {
-  width: 80px;   /* ya jitna size chahiye */
+  width: 110px;   /* ya jitna size chahiye */
   height: auto;
   
 }
@@ -632,7 +632,7 @@ textarea{
 }
 .projects{
 
-   padding: 50px 80px 50px 80px;
+   padding: 50px 20px 50px 20px !important;
     
 
 }

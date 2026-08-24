@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { supabase } from './supabaseClient'
 import "./App.css";
 
 function Contact() {
@@ -27,6 +28,20 @@ function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const { error } = await supabase
+      .from('portfolio-form-submissions')
+      .insert([{
+        name: formData.full_name,
+        email: formData.email,
+        "phone number": formData.phone,
+        date: formData.preferred_date,
+        time: formData.preferred_time,
+        message: formData.message
+      }]);
+
+    if (error) {
+      console.log('Supabase Error:', error.message);
+    }
     try {
       await emailjs.send(
         "service_wkzhft4", // Aapka EmailJS Service ID
