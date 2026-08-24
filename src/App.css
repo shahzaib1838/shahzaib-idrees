@@ -636,6 +636,9 @@ textarea{
     
 
 }
+.project-card-box{
+flex-wrap: wrap;
+}
 }
 /* ================================
    EXPERIENCE SECTION
@@ -1062,7 +1065,13 @@ textarea{
 /* =======================
         PROJECTS
 ======================= */
-
+.project-card-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 20px;
+}
 .projects{
 
     padding: 50px 80px 50px 80px;

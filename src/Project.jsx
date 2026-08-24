@@ -135,10 +135,10 @@ function Project() {
       <div className="project-category">
 
         <h3>📈 SEO Project (Google Business Profile)</h3>
-
+        <div class = "project-card-box">
         <div className="project-card">
 
-          <h4>Google Business Profile</h4>
+         <h4>TheScriptFlow</h4>
 
           <p>
             Local SEO & Google Business Profile Optimization.
@@ -151,6 +151,23 @@ function Project() {
             View GMB →
           </a>
 
+        </div>
+         <div className="project-card">
+
+          <h4>SZ Vision</h4>
+
+          <p>
+            Local SEO & Google Business Profile Optimization.
+          </p>
+
+          <a
+            href="https://share.google/7xfT7jfLODT0nL3Rc"
+            target="_blank"
+          >
+            View GMB →
+          </a>
+
+        </div>
         </div>
 
       </div>
