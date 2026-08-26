@@ -5,7 +5,7 @@ function Experience() {
     {
       company: "Predawn Solutions",
       logo: "PS",
-      role: "WordPress Developer",
+      role: "WordPress & Shopify Developer",
       type: "Full-time",
       duration: "Feb 2026 - Present",
       location: "Multan, Punjab, Pakistan · On-site",
