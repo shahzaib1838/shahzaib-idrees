@@ -1,175 +1,203 @@
 import "./App.css";
+import logo from "./assets/logo.png";
 import {
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaGithub,
   FaLinkedin,
-  FaFileDownload,
-  FaPaperPlane,
+  FaArrowUp,
 } from "react-icons/fa";
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="footer">
 
-      {/* Heading */}
-      <div className="footer-top">
+      {/* ==========================
+          FOOTER MAIN
+      ========================== */}
 
-        <div className="footer-heading">
-          <h2>
-            Get In <span>Touch</span>
-          </h2>
+      <div className="footer-main">
+
+        {/* ==========================
+            BRAND
+        ========================== */}
+
+        <div className="footer-brand">
+
+          <a href="#home" className="footer-logo">
+  <img src={logo} alt="Shahzaib Idrees Logo" />
+</a>
 
           <p>
-            Have a project in mind? Let's build something amazing together.
+            Frontend Developer specializing in Shopify, WordPress,
+            React and modern web solutions.
           </p>
-        </div>
 
-        <div className="footer-grid">
+          <div className="footer-socials">
 
-          {/* Left Side */}
+            <a
+              href="https://github.com/shahzaib1838"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+            >
+              <FaGithub />
+            </a>
 
-          <div className="footer-left">
-
-            <div className="info-card">
-              <div className="icon-box">
-                <FaEnvelope />
-              </div>
-
-              <div className="info-content">
-                <h4>Email</h4>
-                <p>2022-uam-1838@mnsuam.edu.pk</p>
-              </div>
-            </div>
-
-            <div className="info-card">
-              <div className="icon-box">
-                <FaPhoneAlt />
-              </div>
-
-              <div className="info-content">
-                <h4>Phone</h4>
-                <p>0324 5225872</p>
-              </div>
-            </div>
-
-            <div className="info-card">
-              <div className="icon-box">
-                <FaMapMarkerAlt />
-              </div>
-
-              <div className="info-content">
-                <h4>Location</h4>
-                <p>Multan, Pakistan</p>
-              </div>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/shahzaib-idrees-b04503254/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
 
           </div>
 
-          {/* Right Side */}
+        </div>
 
-          <div className="footer-right">
 
-            <h3>Let's Build Something Amazing</h3>
+        {/* ==========================
+            QUICK LINKS
+        ========================== */}
 
-            <p>
-              Whether you need a Shopify Store, WordPress Website,
-              React Frontend or SEO services, I'm ready to help
-              your business grow.
-            </p>
+        <div className="footer-links">
 
-            <div className="footer-buttons">
+          <h3>Quick Links</h3>
 
-              <a
-                href="mailto:2022-uam-1838@mnsuam.edu.pk"
-                className="btn-primary"
-              >
-                <FaPaperPlane />
-                Send Email
-              </a>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+  <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
 
-              <a
-                href="https://www.linkedin.com/in/shahzaib-idrees-b04503254/"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-outline"
-              >
-                <FaLinkedin />
-                Connect on LinkedIn
-              </a>
+            <li>
+              <a href="#skills">Blog</a>
+            </li>
 
-            </div>
+          
+          </ul>
 
+        </div>
+
+
+        {/* ==========================
+            SERVICES
+        ========================== */}
+
+        <div className="footer-links">
+
+          <h3>Services</h3>
+
+          <ul>
+            <li>
+              <a href="#services">Shopify</a>
+            </li>
+
+            <li>
+              <a href="#services">WordPress</a>
+            </li>
+
+            <li>
+              <a href="#services">React</a>
+            </li>
+
+            <li>
+              <a href="#services">Frontend</a>
+            </li>
+
+            <li>
+              <a href="#services">SEO</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+        {/* ==========================
+            CONTACT
+        ========================== */}
+
+        <div className="footer-contact">
+
+          <h3>Contact</h3>
+
+          <a
+            href="mailto:2022-uam-1838@mnsuam.edu.pk"
+            className="contact-item"
+          >
+            <span className="contact-icon">
+              <FaEnvelope />
+            </span>
+
+            <span>
+              2022-uam-1838@mnsuam.edu.pk
+            </span>
+          </a>
+
+
+          <a
+            href="tel:+923245225872"
+            className="contact-item"
+          >
+            <span className="contact-icon">
+              <FaPhoneAlt />
+            </span>
+
+            <span>
+              0324 5225872
+            </span>
+          </a>
+
+
+          <div className="contact-item">
+            <span className="contact-icon">
+              <FaMapMarkerAlt />
+            </span>
+
+            <span>
+              Multan, Pakistan
+            </span>
           </div>
 
         </div>
 
       </div>
 
-      {/* Social Cards */}
 
-      <div className="social-grid">
-
-        <a
-          href="https://github.com/shahzaib1838"
-          target="_blank"
-          rel="noreferrer"
-          className="social-card"
-        >
-          <FaGithub className="social-icon" />
-
-          <h4>GitHub</h4>
-
-          <p>Visit Now</p>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/shahzaib-idrees-b04503254/"
-          target="_blank"
-          rel="noreferrer"
-          className="social-card"
-        >
-          <FaLinkedin className="social-icon" />
-
-          <h4>LinkedIn</h4>
-
-          <p>View Profile</p>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/shahzaib-idrees-b04503254/"
-          target="_blank"
-          rel="noreferrer"
-          className="social-card"
-        >
-          <FaFileDownload className="social-icon" />
-
-          <h4>Resume</h4>
-
-          <p>Download CV</p>
-        </a>
-
-        <a
-          href="https://shahzaibidrees.netlify.app/"
-          className="social-card"
-        >
-          <FaPaperPlane className="social-icon" />
-
-          <h4>Portfolio</h4>
-
-          <p>Visit Homepage</p>
-        </a>
-
-      </div>
-
-      {/* Bottom */}
+      {/* ==========================
+          FOOTER BOTTOM
+      ========================== */}
 
       <div className="footer-bottom">
 
         <p>
           © 2026 Shahzaib Idrees. All Rights Reserved.
         </p>
+
+        <button
+          className="back-to-top"
+          onClick={scrollToTop}
+          aria-label="Back to top"
+        >
+          <FaArrowUp />
+        </button>
+
+       
 
       </div>
 

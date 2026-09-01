@@ -1,178 +1,145 @@
 import "./App.css";
+import { FaArrowRight, FaExternalLinkAlt } from "react-icons/fa";
 
 function Project() {
+  const projects = [
+    {
+      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-09-01_205112.png?v=1788277767",
+      title: "Think Rich Brand",
+      category: "Shopify Store",
+      description:
+        "Complete Shopify store development and customization with a clean, responsive and conversion-focused design.",
+      link: "https://thinkrichbrand.com",
+      tech: "Shopify",
+    },
+
+    {
+      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-09-01_205446.png?v=1788277921",
+      title: "PointRN",
+      category: "Business Website",
+      description:
+        "Professional WordPress business website with responsive design, clean layout and optimized user experience.",
+      link: "https://pointrn.com",
+      tech: "WordPress",
+    },
+
+    {
+      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-09-01_205824.png?v=1788278165",
+      title: "Interior Design",
+      category: "Service Website",
+      description:
+        "Modern interior design website created with a professional layout focused on presentation and usability.",
+      link: "https://interiordesign.xemensolutions.tech/",
+      tech: "WordPress",
+    },
+
+{
+  image:
+    "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-09-01_210136.png?v=1788278321",
+  title: "Peachstatepeps",
+  category: "WooCommerce Store",
+  description:
+    "Professional WooCommerce e-commerce store with product management, responsive design, and a smooth online shopping experience.",
+  link: "https://peachstatepeps.com/",
+  tech: "WooCommerce",
+},
+  ];
+
   return (
     <section className="projects" id="projects">
 
-      <div className="section-title">
-        <h2>My Projects</h2>
-        <p>
-          Some of my recent Shopify, WordPress and SEO projects.
-        </p>
-      </div>
+      {/* ==========================
+          PROJECT HEADER
+      ========================== */}
 
-      {/* Shopify */}
+      <div className="projects-header">
 
-      <div className="project-category">
-        <h3>🛒 Shopify Development</h3>
+        <div className="projects-heading">
 
-        <div className="project-card">
+          <span className="projects-subtitle">
+            FEATURED PROJECTS
+          </span>
 
-          <h4>Think Rich Brand</h4>
-
-          <p>
-            Complete Shopify Store Development & Customization.
-          </p>
-
-          <a
-            href="https://thinkrichbrand.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Visit Website →
-          </a>
+          <h2>My Recent Projects</h2>
 
         </div>
+
+        <a
+          href="/components/Projects.jsx"
+          className="view-all-projects"
+        >
+          View All Projects
+          <FaArrowRight />
+        </a>
 
       </div>
 
-      {/* WordPress */}
 
-      <div className="project-category">
+      {/* ==========================
+          PROJECT GRID
+      ========================== */}
 
-        <h3>🌐 WordPress Development</h3>
+      <div className="featured-projects">
 
-        <div className="project-grid">
+        {projects.map((project, index) => (
 
-          <div className="project-card">
-            <h4>PointRN</h4>
-            <a href="https://pointrn.com" target="_blank">
-              Visit Website →
-            </a>
+          <div className="featured-project-card" key={index}>
+
+            {/* Project Image */}
+
+            <div className="project-image">
+
+              <img
+                src={project.image}
+                alt={project.title}
+              />
+
+            </div>
+
+
+            {/* Project Content */}
+
+            <div className="project-content">
+
+              <span className="project-category">
+                {project.category}
+              </span>
+
+              <h3>{project.title}</h3>
+
+              <p>
+                {project.description}
+              </p>
+
+
+              {/* Bottom */}
+
+              <div className="project-card-bottom">
+
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-demo"
+                >
+                  Live Demo
+                  <FaExternalLinkAlt />
+                </a>
+
+                <span className="project-tech">
+                  {project.tech}
+                </span>
+
+              </div>
+
+            </div>
+
           </div>
 
-          <div className="project-card">
-            <h4>Interior Design</h4>
-            <a
-              href="https://interiordesign.xemensolutions.tech/"
-              target="_blank"
-            >
-              Visit Website →
-            </a>
-          </div>
-
-          <div className="project-card">
-            <h4>Caliper</h4>
-            <a
-              href="https://caliper.vervixsolutions.com/"
-              target="_blank"
-            >
-              Visit Website →
-            </a>
-          </div>
-
-          <div className="project-card">
-            <h4>Bitness Plan</h4>
-            <a
-              href="http://bitnessplan.techtitanstudio.com/"
-              target="_blank"
-            >
-              Visit Website →
-            </a>
-          </div>
-
-          <div className="project-card">
-            <h4>Quillsnappress</h4>
-            <a
-              href="https://quillsnappress.com/"
-              target="_blank"
-            >
-              Visit Website →
-            </a>
-          </div>
-
-          <div className="project-card">
-            <h4>Mental Health</h4>
-            <a
-              href="https://atyourpacementalhealth.com/"
-              target="_blank"
-            >
-              Visit Website →
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-      {/* React */}
-
-<div className="project-category">
-
-  <h3>⚛️ React Development</h3>
-
-  <div className="project-card">
-
-    <h4>Personal Portfolio</h4>
-
-    <p>
-      Modern, responsive portfolio website built with React, Vite, React Router, EmailJS, and custom CSS.
-    </p>
-
-    <a
-      href="https://shahzaibi-idrees.netlify.app/"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Visit Website →
-    </a>
-
-  </div>
-
-</div>
-
-      {/* SEO */}
-
-      <div className="project-category">
-
-        <h3>📈 SEO Project (Google Business Profile)</h3>
-        <div class = "project-card-box">
-        <div className="project-card">
-
-         <h4>TheScriptFlow</h4>
-
-          <p>
-            Local SEO & Google Business Profile Optimization.
-          </p>
-
-          <a
-            href="https://share.google/f5ZfAEZfNtIm32w1l"
-            target="_blank"
-          >
-            View GMB →
-          </a>
-
-        </div>
-         <div className="project-card">
-
-          <h4>SZ Vision</h4>
-
-          <p>
-            Local SEO & Google Business Profile Optimization.
-          </p>
-
-          <a
-            href="https://share.google/7xfT7jfLODT0nL3Rc"
-            target="_blank"
-          >
-            View GMB →
-          </a>
-
-        </div>
-        </div>
+        ))}
 
       </div>
 
-    
     </section>
   );
 }
