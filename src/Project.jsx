@@ -64,13 +64,13 @@ function Project() {
 
         </div>
 
-        <a
-          href="/components/Projects.jsx"
-          className="view-all-projects"
-        >
-          View All Projects
-          <FaArrowRight />
-        </a>
+       <a
+  href="#/projects"
+  className="view-all-projects"
+>
+  View All Projects
+  <FaArrowRight />
+</a>
 
       </div>
 
