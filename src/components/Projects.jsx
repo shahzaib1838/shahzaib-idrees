@@ -14,7 +14,14 @@ function Projects() {
         "Complete Shopify store development and customization with a modern, responsive and user-friendly shopping experience.",
       link: "https://thinkrichbrand.com",
     },
-
+{
+      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-09-17_215041.png?v=1789663763",
+      title: "Pots for Fun",
+      category: "Shopify",
+      description:
+        "Complete Shopify store development and customization with a modern, responsive and user-friendly shopping experience.",
+      link: "https://potsforfun.com/",
+    },
     // ==========================
     // WOOCOMMERCE
     // ==========================
