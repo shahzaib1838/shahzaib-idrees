@@ -45,7 +45,30 @@ function Projects() {
         "Professional WordPress business website with a clean layout, responsive design and an optimized user experience.",
       link: "https://pointrn.com",
     },
-
+    {
+      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-10-03_202608.png?v=1791041152",
+      title: "Second Chance Hausllc",
+      category: "WordPress",
+      description:
+        "Professional WordPress business website with a clean layout, responsive design and an optimized user experience.",
+      link: "https://secondchancehausllc.com/",
+    },
+       {
+      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-09-01_205446.png?v=1788277921",
+      title: "BdThrive",
+      category: "WordPress",
+      description:
+        "Professional WordPress business website with a clean layout, responsive design and an optimized user experience.",
+      link: "https://bdthrive.com/",
+    },
+      {
+      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-10-03_202659.png?v=1791041151",
+      title: "Trading & Investment",
+      category: "WordPress",
+      description:
+        "Professional WordPress business website with a clean layout, responsive design and an optimized user experience.",
+      link: "https://tradingandinvestingexplaindasifyouwereafiveyeaold.com/",
+    },
     {
       image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-09-01_205824.png?v=1788278165",
       title: "Interior Design",
