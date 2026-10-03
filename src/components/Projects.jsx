@@ -54,7 +54,7 @@ function Projects() {
       link: "https://secondchancehausllc.com/",
     },
        {
-      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-09-01_205446.png?v=1788277921",
+      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-10-03_204111.png?v=1791041895",
       title: "BdThrive",
       category: "WordPress",
       description:
