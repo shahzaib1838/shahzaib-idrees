@@ -49,7 +49,7 @@ const AboutMe = () => {
             <li><span className="check-icon">✓</span> Focused on client satisfaction</li>
           </ul>
           <a href="#contact" className="hire-btn">
-            Hire Me →
+            Contact Me →
           </a>
         </div>
       </div>

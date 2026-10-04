@@ -491,7 +491,7 @@ height:300px;
 
 .hero{
 
-padding:100px 20px;
+padding:100px 20px 50px 20px;
 
 }
 
@@ -634,7 +634,6 @@ textarea{
 
    padding: 50px 20px 50px 20px !important;
     
-
 }
 .project-card-box{
 flex-wrap: wrap;
@@ -656,7 +655,7 @@ flex-wrap: wrap;
 
 @media(max-width: 768px){
   .experience-container {
-    padding: 20px 20px;
+    padding: 20px 0px;
   }
 }
 
@@ -1097,9 +1096,8 @@ flex-wrap: wrap;
 /* ==========================
    PROJECTS
 ========================== */
-
 .projects {
-  padding: 70px 6%;
+padding: 50px 20px 50px 20px !important;
   background: #111827;
   color: #ffffff;
   scroll-margin-top: 100px;
@@ -1826,7 +1824,7 @@ flex-wrap: wrap;
 @media (max-width: 600px) {
 
   .projects-page {
-    padding: 50px 20px;
+    padding: 100px 20px;
   }
 
   .projects-page-header h1 {
@@ -1868,7 +1866,7 @@ flex-wrap: wrap;
 @media (max-width: 400px) {
 
   .projects-page {
-    padding: 45px 16px;
+    padding: 110px 20px 50px 20px;
   }
 
   .projects-page-header h1 {
@@ -2197,7 +2195,7 @@ flex-wrap: wrap;
 
 .about-section {
   background-color: #031527;
-  padding: 60px 20px;
+  padding: 50px 20px;
   color: #ffffff;
   font-family: sans-serif;
 }
@@ -2265,7 +2263,7 @@ flex-wrap: wrap;
   border: 1px solid rgba(32, 191, 255, 0.2);
   padding: 6px 12px;
   border-radius: 20px;
-  font-size: 11px;
+  font-size: 16px;
   color: #dce6f5;
 }
 .badge-item span{
@@ -2341,7 +2339,7 @@ flex-wrap: wrap;
 @media(max-width: 768px){
   
 .about-section {
-  padding: 60px 20px;
+  padding: 50px 20px;
 }
 
 .about-container {
@@ -2603,7 +2601,7 @@ flex-wrap: wrap;
 ========================== */
 .footer {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    margin-top: 50px;
+   
 }
 .footer-main {
   max-width: 1400px;
@@ -2867,7 +2865,7 @@ flex-wrap: wrap;
   .footer-main {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .footer-brand {
@@ -2934,7 +2932,11 @@ flex-wrap: wrap;
   .footer-links a {
     font-size: 14px;
   }
-
+.contact{
+    
+    padding:120px 20px 50px 20px;
+   
+}
   .contact-item {
     font-size: 13px;
   }
