@@ -15,7 +15,7 @@ function Projects() {
       link: "https://thinkrichbrand.com",
     },
 {
-      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/Screenshot_2026-09-17_215041.png?v=1789663763",
+      image: "https://cdn.shopify.com/s/files/1/0655/9501/5247/files/potsforfun.png?v=1791695291",
       title: "Pots for Fun",
       category: "Shopify",
       description:
