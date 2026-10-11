@@ -10,7 +10,7 @@ function Experience() {
       duration: "Feb 2026 - Present",
       location: "Multan, Punjab, Pakistan · On-site",
       description:
-        "Working as a WordPress Developer, building, customizing, and optimizing modern websites while focusing on responsive design, performance, and user experience.",
+        "Working as a WordPress & Shopify Developer, building, customizing, and optimizing modern e-commerce stores and websites. Specialized in theme customization, plugin/app integration, responsive design, site speed, and delivering seamless user experiences.",
       skills: ["WordPress Development", "Shopify Development"],
     },
     {
@@ -22,7 +22,7 @@ function Experience() {
           duration: "Nov 2025 - Feb 2026",
           type: "Full-time",
           description:
-            "During my time as a Shopify Developer at TheScriptFlow, I worked on building, customizing, and optimizing Shopify stores for different clients. I worked with Shopify themes, sections, responsive layouts, and store customization.",
+            "Engineered, customized, and optimized high-performing Shopify stores for various client projects. Focused on custom Liquid theme modifications, building dynamic sections, refining responsive layouts, and enhancing store UI/UX for seamless user experience.",
           skills: ["Shopify Development", "Shopify Theme Customization"],
         },
         {
@@ -30,7 +30,7 @@ function Experience() {
           duration: "Aug 2025 - Nov 2025",
           type: "Internship",
           description:
-            "During my Shopify Development Internship at TheScriptFlow, I gained hands-on experience in creating and managing Shopify stores. My responsibilities included theme customization, frontend development, and improving store layouts.",
+            "Assisted in end-to-end Shopify store creation, configuration, and management. Contributed to theme customization, frontend bug fixes, page layout enhancements, and ensuring full mobile responsiveness across devices.",
           skills: ["Shopify Development", "Store Setup"],
         },
       ],
@@ -43,7 +43,7 @@ function Experience() {
       duration: "May 2025 - Aug 2025",
       location: "Islamabad, Islamabad, Pakistan · Hybrid",
       description:
-        "As an SEO Intern at CodeGini Digital Solution Provider, I worked on on-page, off-page, and technical SEO strategies to improve website visibility, search performance, and content quality.",
+        "Executed end-to-end On-Page, Off-Page, and Technical SEO strategies to drive organic search visibility and improve rankings. Conducted comprehensive keyword research, meta data optimization, technical site audits, backlink strategies, and content enhancements.",
       skills: ["SEO", "WordPress Elementor"],
     },
   ];
